@@ -20,15 +20,14 @@ const Navbar = () => {
   }, [location]);
 
   return (
-    <header className={isScrolled || mobileMenuOpen ? 'glass-nav' : ''} style={{ 
+    <header className="glass-nav" style={{ 
       position: 'fixed', 
       top: 0, 
       left: 0, 
       width: '100%', 
       zIndex: 1000, 
-      padding: isScrolled || mobileMenuOpen ? '0.75rem 0' : '1.5rem 0',
-      transition: 'all 0.3s ease',
-      backgroundColor: isScrolled || mobileMenuOpen ? 'transparent' : 'transparent'
+      padding: isScrolled || mobileMenuOpen ? '0.75rem 0' : '1.25rem 0',
+      transition: 'all 0.3s ease'
     }}>
       <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         
