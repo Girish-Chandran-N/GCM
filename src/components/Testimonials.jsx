@@ -29,7 +29,7 @@ const Testimonials = () => {
         
         <div style={{ textAlign: 'center', marginBottom: '5rem' }}>
           <h2 style={{ fontSize: '2.5rem', marginBottom: '1rem', letterSpacing: '-0.02em' }}>Client Success Stories</h2>
-          <div style={{ width: '80px', height: '4px', background: 'var(--gradient-gold)', margin: '0 auto', borderRadius: '4px' }}></div>
+          <div style={{ width: '80px', height: '4px', background: 'var(--gradient-cyan)', margin: '0 auto', borderRadius: '4px' }}></div>
         </div>
 
         <div className="grid-responsive">
@@ -51,7 +51,7 @@ const Testimonials = () => {
 
               <div style={{ display: 'flex', gap: '0.25rem', marginBottom: '1.5rem', position: 'relative', zIndex: 10 }}>
                 {[1, 2, 3, 4, 5].map(star => (
-                  <Star key={star} size={18} color="var(--accent-gold)" fill="var(--accent-gold)" />
+                  <Star key={star} size={18} color="var(--accent-cyan)" fill="var(--accent-cyan)" />
                 ))}
               </div>
               
@@ -67,7 +67,7 @@ const Testimonials = () => {
                   fontSize: '0.75rem', 
                   padding: '0.25rem 0.75rem', 
                   backgroundColor: 'rgba(212, 175, 55, 0.1)', 
-                  color: '#b89221', 
+                  color: '#009ACC', 
                   borderRadius: '50px',
                   fontWeight: 600
                 }}>

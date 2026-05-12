@@ -13,7 +13,7 @@ const HRTraining = () => {
 
         <div className="grid-responsive">
           <div>
-            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.75rem', padding: '0.5rem 1rem', backgroundColor: 'rgba(212, 175, 55, 0.1)', color: 'var(--accent-gold)', borderRadius: '50px', marginBottom: '1.5rem', fontWeight: 600 }}>
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.75rem', padding: '0.5rem 1rem', backgroundColor: 'rgba(212, 175, 55, 0.1)', color: 'var(--accent-cyan)', borderRadius: '50px', marginBottom: '1.5rem', fontWeight: 600 }}>
               <Users size={18} />
               Core Platform
             </div>
@@ -34,7 +34,7 @@ const HRTraining = () => {
                 { title: 'Performance Management', desc: 'Setting OKRs and conducting effective reviews.' },
               ].map((item, i) => (
                 <div key={i} style={{ display: 'flex', gap: '1rem', paddingBottom: '1.5rem', borderBottom: i !== 3 ? '1px solid #f1f5f9' : 'none' }}>
-                  <CheckCircle color="var(--accent-gold)" style={{ flexShrink: 0 }} />
+                  <CheckCircle color="var(--accent-cyan)" style={{ flexShrink: 0 }} />
                   <div>
                     <h4 style={{ fontSize: '1.125rem', marginBottom: '0.25rem' }}>{item.title}</h4>
                     <p style={{ color: 'var(--text-main)', fontSize: '0.875rem' }}>{item.desc}</p>

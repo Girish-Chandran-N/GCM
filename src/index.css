@@ -2,8 +2,8 @@
   /* Core Colors */
   --primary-navy: #0F172A;
   --secondary-navy: #1E293B;
-  --accent-gold: #D4AF37;
-  --accent-gold-hover: #F2C94C;
+  --accent-cyan: #00C2FF;
+  --accent-cyan-hover: #33CCFF;
   --text-main: #334155;
   --text-light: #94A3B8;
   --bg-main: #F8FAFC;
@@ -26,7 +26,7 @@
   --shadow-hover: 0 20px 40px -15px rgba(15, 23, 42, 0.15);
 
   /* Gradients */
-  --gradient-gold: linear-gradient(135deg, var(--accent-gold) 0%, #FFE58F 100%);
+  --gradient-cyan: linear-gradient(135deg, var(--accent-cyan) 0%, #80E5FF 100%);
   --gradient-navy: linear-gradient(135deg, var(--primary-navy) 0%, var(--secondary-navy) 100%);
 
   /* Typography */
@@ -93,7 +93,7 @@ ul {
 }
 
 .text-gradient {
-  background: var(--gradient-gold);
+  background: var(--gradient-cyan);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -131,12 +131,12 @@ ul {
 }
 
 .btn-accent {
-  background-color: var(--accent-gold);
+  background-color: var(--accent-cyan);
   color: var(--primary-navy);
 }
 
 .btn-accent:hover {
-  background-color: var(--accent-gold-hover);
+  background-color: var(--accent-cyan-hover);
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
 }

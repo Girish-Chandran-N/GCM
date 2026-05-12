@@ -21,7 +21,7 @@ const ITConsultancy = () => {
 
         <div className="grid-responsive">
           <div>
-            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.75rem', padding: '0.5rem 1rem', backgroundColor: 'rgba(212, 175, 55, 0.1)', color: 'var(--accent-gold)', borderRadius: '50px', marginBottom: '1.5rem', fontWeight: 600 }}>
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.75rem', padding: '0.5rem 1rem', backgroundColor: 'rgba(212, 175, 55, 0.1)', color: 'var(--accent-cyan)', borderRadius: '50px', marginBottom: '1.5rem', fontWeight: 600 }}>
               <Laptop size={18} />
               Core Platform
             </div>
@@ -32,7 +32,7 @@ const ITConsultancy = () => {
             <ul style={{ display: 'flex', flexDirection: 'column', gap: '1rem', marginBottom: '2.5rem' }}>
               {benefits.map((benefit, i) => (
                 <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', color: 'var(--primary-navy)', fontWeight: 500 }}>
-                  <CheckCircle size={20} color="var(--accent-gold)" style={{ flexShrink: 0, marginTop: '0.2rem' }} />
+                  <CheckCircle size={20} color="var(--accent-cyan)" style={{ flexShrink: 0, marginTop: '0.2rem' }} />
                   {benefit}
                 </li>
               ))}
@@ -50,7 +50,7 @@ const ITConsultancy = () => {
                 { step: '04', title: 'Placement', desc: 'Seamless integration into your workflow.' },
               ].map((item, i) => (
                 <div key={i} style={{ display: 'flex', gap: '1.5rem' }}>
-                  <div style={{ color: 'var(--accent-gold)', fontSize: '1.5rem', fontWeight: 700, opacity: 0.5 }}>{item.step}</div>
+                  <div style={{ color: 'var(--accent-cyan)', fontSize: '1.5rem', fontWeight: 700, opacity: 0.5 }}>{item.step}</div>
                   <div>
                     <h4 style={{ fontSize: '1.125rem', marginBottom: '0.25rem' }}>{item.title}</h4>
                     <p style={{ color: 'var(--text-main)', fontSize: '0.875rem' }}>{item.desc}</p>

@@ -57,7 +57,7 @@ const Contact = () => {
         
         <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
           <h1 style={{ fontSize: '3rem', marginBottom: '1rem' }}>Get In Touch</h1>
-          <div style={{ width: '60px', height: '4px', backgroundColor: 'var(--accent-gold)', margin: '0 auto 1.5rem', borderRadius: '2px' }}></div>
+          <div style={{ width: '60px', height: '4px', backgroundColor: 'var(--accent-cyan)', margin: '0 auto 1.5rem', borderRadius: '2px' }}></div>
           <p style={{ color: 'var(--text-main)', fontSize: '1.125rem', maxWidth: '600px', margin: '0 auto' }}>
             Ready to build strong teams and create memorable employee experiences? Reach out to us today.
           </p>
@@ -75,7 +75,7 @@ const Contact = () => {
                   display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0,
                   boxShadow: '0 4px 6px rgba(0,0,0,0.05)'
                 }}>
-                  <MapPin color="var(--accent-gold)" />
+                  <MapPin color="var(--accent-cyan)" />
                 </div>
                 <div>
                   <h4 style={{ fontSize: '1.125rem', marginBottom: '0.25rem' }}>Headquarters</h4>
@@ -88,7 +88,7 @@ const Contact = () => {
                   display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0,
                   boxShadow: '0 4px 6px rgba(0,0,0,0.05)'
                 }}>
-                  <Mail color="var(--accent-gold)" />
+                  <Mail color="var(--accent-cyan)" />
                 </div>
                 <div>
                   <h4 style={{ fontSize: '1.125rem', marginBottom: '0.25rem' }}>Email Us</h4>

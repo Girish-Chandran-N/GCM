@@ -3,9 +3,9 @@ import { Target, Users, MapPin } from 'lucide-react';
 
 const About = () => {
   const stats = [
-    { label: 'Founded', value: '2026', icon: <Target size={24} color="var(--accent-gold)" /> },
-    { label: 'Company Size', value: '2-10 Employees', icon: <Users size={24} color="var(--accent-gold)" /> },
-    { label: 'Headquarters', value: 'Trivandrum, Kerala', icon: <MapPin size={24} color="var(--accent-gold)" /> }
+    { label: 'Founded', value: '2026', icon: <Target size={24} color="var(--accent-cyan)" /> },
+    { label: 'Company Size', value: '2-10 Employees', icon: <Users size={24} color="var(--accent-cyan)" /> },
+    { label: 'Headquarters', value: 'Trivandrum, Kerala', icon: <MapPin size={24} color="var(--accent-cyan)" /> }
   ];
 
   return (
@@ -15,7 +15,7 @@ const About = () => {
           
           <div style={{ textAlign: 'center' }}>
             <h2 style={{ fontSize: '2.5rem', marginBottom: '1.5rem', letterSpacing: '-0.02em' }}>Who We Are</h2>
-            <div style={{ width: '80px', height: '4px', background: 'var(--gradient-gold)', margin: '0 auto 2rem', borderRadius: '4px' }}></div>
+            <div style={{ width: '80px', height: '4px', background: 'var(--gradient-cyan)', margin: '0 auto 2rem', borderRadius: '4px' }}></div>
             
             <p style={{ color: 'var(--text-main)', fontSize: '1.125rem', lineHeight: 1.8, marginBottom: '1.5rem' }}>
               We are a dynamic and forward-thinking company specializing in <strong style={{ color: 'var(--primary-navy)' }}>IT Recruitment</strong>, <strong style={{ color: 'var(--primary-navy)' }}>Onboarding Gift Solutions</strong>, and <strong style={{ color: 'var(--primary-navy)' }}>HR Training Services</strong>. 

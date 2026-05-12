@@ -32,12 +32,17 @@ const Navbar = () => {
       <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         
         {/* Logo */}
-        <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', zIndex: 60 }}>
-          <img src="/logo.png" alt="Global Continual Logo" style={{ height: '36px' }} />
-          <span style={{ fontWeight: 700, color: 'var(--primary-navy)', fontSize: '1.25rem', letterSpacing: '-0.5px' }}>
-            Global Continual
-          </span>
-        </Link>
+          <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', zIndex: 10 }}>
+            <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
+              <path d="M 90 90 L 45 90 A 40 40 0 0 1 45 10 L 65 10" stroke="var(--accent-cyan)" strokeWidth="8" strokeLinecap="round" fill="none" />
+              <polygon points="60,0 80,10 60,20" fill="var(--accent-cyan)" />
+              <text x="20" y="72" fontFamily="Arial, sans-serif" fontWeight="900" fontSize="55" fill="var(--primary-navy)" letterSpacing="-2px">G</text>
+              <text x="55" y="72" fontFamily="Arial, sans-serif" fontWeight="900" fontSize="55" fill="var(--primary-navy)">M</text>
+            </svg>
+            <span style={{ fontSize: '1.25rem', fontWeight: 800, color: 'var(--primary-navy)', letterSpacing: '-0.5px' }}>
+              Global Continual
+            </span>
+          </Link>
 
         {/* Desktop Nav */}
         <nav style={{ display: 'none' }} className="desktop-nav">
@@ -86,7 +91,7 @@ const Navbar = () => {
           .mobile-menu-overlay { display: none !important; }
         }
         .nav-link { color: var(--primary-navy); }
-        .nav-link:hover { color: var(--accent-gold); }
+        .nav-link:hover { color: var(--accent-cyan); }
         .mobile-link { color: var(--primary-navy); display: block; padding: 0.5rem; }
       `}</style>
     </header>

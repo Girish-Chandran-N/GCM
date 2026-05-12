@@ -7,19 +7,19 @@ const Services = () => {
     {
       title: 'IT Services and IT Consultancy',
       description: 'With a deep understanding of the evolving tech industry, we provide end-to-end IT recruitment services, connecting businesses with skilled professionals who drive innovation and growth.',
-      icon: <Laptop size={32} color="var(--accent-gold)" />,
+      icon: <Laptop size={32} color="var(--accent-cyan)" />,
       path: '/it-consultancy'
     },
     {
       title: 'Employee Gift Solutions',
       description: 'Beyond hiring, we enhance the employee journey through thoughtfully curated onboarding gifts that leave a lasting first impression and strengthen company culture.',
-      icon: <Gift size={32} color="var(--accent-gold)" />,
+      icon: <Gift size={32} color="var(--accent-cyan)" />,
       path: '/gift-solutions'
     },
     {
       title: 'HR Training & Employee Activities',
       description: 'Our HR training programs are designed to empower teams and leaders with practical skills, modern strategies, and industry insights for workplace effectiveness.',
-      icon: <Users size={32} color="var(--accent-gold)" />,
+      icon: <Users size={32} color="var(--accent-cyan)" />,
       path: '/hr-training'
     }
   ];
@@ -30,7 +30,7 @@ const Services = () => {
         
         <div style={{ textAlign: 'center', marginBottom: '5rem' }}>
           <h2 style={{ fontSize: '2.5rem', marginBottom: '1rem', letterSpacing: '-0.02em' }}>Our Core Platforms</h2>
-          <div style={{ width: '80px', height: '4px', background: 'var(--gradient-gold)', margin: '0 auto', borderRadius: '4px' }}></div>
+          <div style={{ width: '80px', height: '4px', background: 'var(--gradient-cyan)', margin: '0 auto', borderRadius: '4px' }}></div>
         </div>
 
         <div className="grid-responsive">
@@ -50,7 +50,7 @@ const Services = () => {
               {/* Animated top gradient border on hover */}
               <div className="card-top-border" style={{
                 position: 'absolute', top: 0, left: 0, width: '100%', height: '6px',
-                background: 'var(--gradient-gold)', opacity: 0, transition: 'opacity 0.4s ease'
+                background: 'var(--gradient-cyan)', opacity: 0, transition: 'opacity 0.4s ease'
               }}></div>
               
               <div style={{ 
@@ -72,7 +72,7 @@ const Services = () => {
                 {service.description}
               </p>
 
-              <Link to={service.path} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: 'var(--accent-gold)', fontWeight: 600, transition: 'all 0.3s' }} className="learn-more-link">
+              <Link to={service.path} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: 'var(--accent-cyan)', fontWeight: 600, transition: 'all 0.3s' }} className="learn-more-link">
                 Learn More <ArrowRight size={18} />
               </Link>
 
@@ -95,7 +95,7 @@ const Services = () => {
         }
         .service-card:hover .learn-more-link {
           gap: 1rem !important;
-          color: #b89221 !important;
+          color: #009ACC !important;
         }
       `}</style>
     </section>

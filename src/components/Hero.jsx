@@ -17,11 +17,11 @@ const Hero = () => {
       {/* Decorative pulsing background shapes */}
       <div className="animate-pulse-slow" style={{
         position: 'absolute', top: '-10%', right: '-5%', width: '40%', height: '60%', 
-        background: 'var(--accent-gold)', borderRadius: '50%', opacity: 0.15, filter: 'blur(80px)'
+        background: 'var(--accent-cyan)', borderRadius: '50%', opacity: 0.15, filter: 'blur(80px)'
       }}></div>
       <div className="animate-pulse-slow" style={{
         position: 'absolute', bottom: '-20%', left: '-10%', width: '40%', height: '50%', 
-        background: '#FFE58F', borderRadius: '50%', opacity: 0.1, filter: 'blur(100px)',
+        background: '#80E5FF', borderRadius: '50%', opacity: 0.1, filter: 'blur(100px)',
         animationDelay: '2s'
       }}></div>
 
@@ -30,12 +30,12 @@ const Hero = () => {
           
           <div className="animate-fade-in" style={{ 
             display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.5rem 1.5rem', 
-            backgroundColor: 'rgba(255, 255, 255, 0.05)', color: '#FFE58F',
+            backgroundColor: 'rgba(255, 255, 255, 0.05)', color: '#80E5FF',
             borderRadius: '50px', fontWeight: 600, marginBottom: '2rem', fontSize: '0.875rem',
             border: '1px solid rgba(255, 255, 255, 0.1)',
             backdropFilter: 'blur(10px)'
           }}>
-            <span style={{ width: '8px', height: '8px', backgroundColor: 'var(--accent-gold)', borderRadius: '50%', display: 'inline-block', boxShadow: '0 0 10px var(--accent-gold)' }}></span>
+            <span style={{ width: '8px', height: '8px', backgroundColor: 'var(--accent-cyan)', borderRadius: '50%', display: 'inline-block', boxShadow: '0 0 10px var(--accent-cyan)' }}></span>
             Established 2026 • IT Services & Consulting
           </div>
 
@@ -66,7 +66,7 @@ const Hero = () => {
           }}>
             <a href="#services" className="btn btn-primary" style={{ 
               display: 'flex', alignItems: 'center', gap: '0.5rem', 
-              background: 'var(--gradient-gold)', color: 'var(--primary-navy)',
+              background: 'var(--gradient-cyan)', color: 'var(--primary-navy)',
               boxShadow: '0 10px 25px -5px rgba(212, 175, 55, 0.4)',
               border: 'none',
               padding: '0.875rem 2rem'
