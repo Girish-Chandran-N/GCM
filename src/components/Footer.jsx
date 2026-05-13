@@ -29,7 +29,8 @@ const Footer = () => {
             <p style={{ color: 'var(--text-light)', lineHeight: 1.6, marginBottom: '1.5rem' }}>
               Hiring Minds. Welcoming Hearts. Building Futures.
             </p>
-            <div style={{ display: 'flex', gap: '1rem' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+              <span style={{ color: 'white', fontWeight: 600, fontSize: '0.875rem' }}>Follow Us:</span>
               <a href="https://www.linkedin.com/company/global-continual-management-solutions-pvt-ltd/posts/?feedView=all" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="LinkedIn">
                 <Linkedin size={24} />
               </a>

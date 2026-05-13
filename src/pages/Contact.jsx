@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, MapPin, Send } from 'lucide-react';
+import { Mail, MapPin, Send, Linkedin } from 'lucide-react';
 import emailjs from '@emailjs/browser';
 
 const Contact = () => {
@@ -93,6 +93,19 @@ const Contact = () => {
                 <div>
                   <h4 style={{ fontSize: '1.125rem', marginBottom: '0.25rem' }}>Email Us</h4>
                   <a href="mailto:adarsh@globalcontinual.com" style={{ color: 'var(--text-main)' }}>adarsh@globalcontinual.com</a>
+                </div>
+              </li>
+              <li style={{ display: 'flex', gap: '1rem' }}>
+                <div style={{ 
+                  width: '50px', height: '50px', backgroundColor: 'white', borderRadius: '50%', 
+                  display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0,
+                  boxShadow: '0 4px 6px rgba(0,0,0,0.05)'
+                }}>
+                  <Linkedin color="var(--accent-cyan)" />
+                </div>
+                <div>
+                  <h4 style={{ fontSize: '1.125rem', marginBottom: '0.25rem' }}>LinkedIn</h4>
+                  <a href="https://www.linkedin.com/company/global-continual-management-solutions-pvt-ltd/posts/?feedView=all" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-main)', textDecoration: 'underline' }}>Follow our updates</a>
                 </div>
               </li>
             </ul>
