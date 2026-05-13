@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, MapPin } from 'lucide-react';
+import { Mail, MapPin, Linkedin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -29,6 +29,11 @@ const Footer = () => {
             <p style={{ color: 'var(--text-light)', lineHeight: 1.6, marginBottom: '1.5rem' }}>
               Hiring Minds. Welcoming Hearts. Building Futures.
             </p>
+            <div style={{ display: 'flex', gap: '1rem' }}>
+              <a href="https://www.linkedin.com/company/global-continual-management-solutions-pvt-ltd/posts/?feedView=all" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="LinkedIn">
+                <Linkedin size={24} />
+              </a>
+            </div>
           </div>
 
           {/* Contact Col */}
@@ -78,6 +83,8 @@ const Footer = () => {
       <style>{`
         .footer-link { color: var(--text-light); }
         .footer-link:hover { color: var(--accent-cyan); }
+        .social-icon { color: var(--text-light); transition: all 0.3s; display: inline-flex; }
+        .social-icon:hover { color: var(--accent-cyan); transform: translateY(-2px); }
       `}</style>
     </footer>
   );
