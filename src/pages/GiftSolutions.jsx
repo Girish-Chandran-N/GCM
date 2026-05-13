@@ -28,15 +28,14 @@ const GiftSolutions = () => {
             <h3 style={{ fontSize: '1.5rem', marginBottom: '1.5rem' }}>Popular Packages</h3>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
               {[
-                { title: 'The Essentials Box', desc: 'Branded hoodie, premium notebook, insulated mug.' },
-                { title: 'The Remote Worker', desc: 'Ergonomic accessories, noise-canceling earplugs, coffee subscription.' },
-                { title: 'The Executive', desc: 'High-end tech accessories, luxury pen, curated leadership book.' },
+                { title: 'The Essentials Box' },
+                { title: 'The Remote Worker' },
+                { title: 'The Executive' },
               ].map((item, i) => (
-                <div key={i} style={{ display: 'flex', gap: '1rem', paddingBottom: '1.5rem', borderBottom: i !== 2 ? '1px solid #f1f5f9' : 'none' }}>
+                <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '1rem', paddingBottom: '1.5rem', borderBottom: i !== 2 ? '1px solid #f1f5f9' : 'none' }}>
                   <CheckCircle color="var(--accent-cyan)" style={{ flexShrink: 0 }} />
                   <div>
-                    <h4 style={{ fontSize: '1.125rem', marginBottom: '0.25rem' }}>{item.title}</h4>
-                    <p style={{ color: 'var(--text-main)', fontSize: '0.875rem' }}>{item.desc}</p>
+                    <h4 style={{ fontSize: '1.125rem', margin: 0 }}>{item.title}</h4>
                   </div>
                 </div>
               ))}
