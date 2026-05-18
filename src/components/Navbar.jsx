@@ -33,7 +33,7 @@ const Navbar = () => {
         
         {/* Logo */}
           <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', zIndex: 10 }}>
-            <img src="/logo-big.png" alt="Global Continual Logo" style={{ height: '48px', width: 'auto', mixBlendMode: 'multiply' }} />
+            <img src="/logo-big.png" alt="Global Continual Logo" style={{ height: '48px', width: 'auto', mixBlendMode: 'multiply', transform: 'scale(1.4)', transformOrigin: 'left center' }} />
           </Link>
 
         {/* Desktop Nav */}
