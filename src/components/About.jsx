@@ -3,7 +3,7 @@ import { Target, Users, MapPin } from 'lucide-react';
 
 const About = () => {
   const stats = [
-    { label: 'Founded', value: '2026', icon: <Target size={24} color="var(--accent-cyan)" /> },
+    { label: 'Founded', value: '2021', icon: <Target size={24} color="var(--accent-cyan)" /> },
     { label: 'Headquarters', value: 'Trivandrum, Kerala', icon: <MapPin size={24} color="var(--accent-cyan)" /> }
   ];
 
