@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Mail, MapPin, Send } from 'lucide-react';
-import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '' });
@@ -10,35 +9,26 @@ const Contact = () => {
     e.preventDefault();
     setStatus('submitting');
 
-    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
-    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
-    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
-
-    if (!serviceId || !templateId || !publicKey) {
-      console.warn("EmailJS credentials are missing. Simulating success for development.");
-      setTimeout(() => {
-        setStatus('success');
-        setFormData({ name: '', email: '', subject: '', message: '' });
-      }, 1000);
-      return;
-    }
+    const googleFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLScqHVWo0n7oP_6xmIP6wmFk5d3iD0rELK8rvu4d-_z1kJjrQQ/formResponse";
+    
+    const formDataObj = new FormData();
+    formDataObj.append('entry.970972225', formData.name); // Name
+    formDataObj.append('entry.1806275524', formData.email); // Email
+    formDataObj.append('entry.51092704', formData.subject); // Subject
+    formDataObj.append('entry.247705877', formData.message); // Message
 
     try {
-      await emailjs.send(
-        serviceId,
-        templateId,
-        {
-          from_name: formData.name,
-          from_email: formData.email,
-          subject: formData.subject,
-          message: formData.message,
-        },
-        publicKey
-      );
+      await fetch(googleFormUrl, {
+        method: 'POST',
+        mode: 'no-cors', // Required for silent submission to Google Forms
+        body: formDataObj
+      });
+      
+      // Because we use no-cors, we always assume success if no network error
       setStatus('success');
       setFormData({ name: '', email: '', subject: '', message: '' });
     } catch (error) {
-      console.error("Failed to send email:", error);
+      console.error("Failed to submit to Google Forms:", error);
       setStatus('error');
     }
   };
