@@ -33,15 +33,7 @@ const Navbar = () => {
         
         {/* Logo */}
           <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', zIndex: 10 }}>
-            <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
-              <path d="M 90 90 L 45 90 A 40 40 0 0 1 45 10 L 65 10" stroke="var(--accent-cyan)" strokeWidth="8" strokeLinecap="round" fill="none" />
-              <polygon points="60,0 80,10 60,20" fill="var(--accent-cyan)" />
-              <text x="20" y="72" fontFamily="Arial, sans-serif" fontWeight="900" fontSize="55" fill="var(--primary-navy)" letterSpacing="-2px">G</text>
-              <text x="55" y="72" fontFamily="Arial, sans-serif" fontWeight="900" fontSize="55" fill="var(--primary-navy)">M</text>
-            </svg>
-            <span style={{ fontSize: '1.25rem', fontWeight: 800, color: 'var(--primary-navy)', letterSpacing: '-0.5px' }}>
-              Global Continual
-            </span>
+            <img src="/logo-big.png" alt="Global Continual Logo" style={{ height: '48px', width: 'auto', mixBlendMode: 'multiply' }} />
           </Link>
 
         {/* Desktop Nav */}
